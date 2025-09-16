@@ -1,0 +1,164 @@
+.navbar-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 64px;
+}
+
+.navbar-logo {
+  flex-shrink: 0;
+}
+
+.navbar-brand {
+  color: #1890ff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #40a9ff;
+}
+
+.navbar-menu-desktop {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.navbar-menu {
+  border-bottom: none;
+  background: transparent;
+  min-width: 300px;
+}
+
+.navbar-menu .ant-menu-item {
+  border-bottom: none;
+}
+
+.navbar-menu .ant-menu-item a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-menu .ant-menu-item:hover a {
+  color: #1890ff;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-cart-badge .ant-badge-count {
+  background-color: #ff4d4f;
+}
+
+.navbar-cart-button {
+  color: #333;
+  font-size: 20px;
+}
+
+.navbar-cart-button:hover {
+  color: #1890ff;
+  background-color: #f0f0f0;
+}
+
+.navbar-mobile-menu-button {
+  color: #333;
+  font-size: 20px;
+  display: none;
+}
+
+.navbar-mobile-menu-button:hover {
+  color: #1890ff;
+  background-color: #f0f0f0;
+}
+
+.navbar-mobile-drawer .ant-drawer-header {
+  background-color: #1890ff;
+  color: white;
+}
+
+.navbar-mobile-drawer .ant-drawer-title {
+  color: white;
+}
+
+.navbar-mobile-menu {
+  border-right: none;
+}
+
+.navbar-mobile-menu .ant-menu-item a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-cart-drawer .ant-drawer-header {
+  background-color: #1890ff;
+  color: white;
+}
+
+.navbar-cart-drawer .ant-drawer-title {
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .navbar-menu-desktop {
+    display: none;
+  }
+
+  .navbar-mobile-menu-button {
+    display: inline-flex;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-cart-drawer {
+    width: 90% !important;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar-actions {
+    gap: 5px;
+  }
+
+  .navbar-cart-button,
+  .navbar-mobile-menu-button {
+    font-size: 18px;
+  }
+}
